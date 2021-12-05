@@ -43,7 +43,9 @@ a:visited {
 }
 
 .button-index:hover,
-.button-index:focus {
+.button-style:hover,
+.button-index:focus,
+.button-style:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
 
@@ -102,8 +104,8 @@ a:visited {
 }
 
 .page-recipes__button {
-  margin-left: 60px;
-  margin-top: 60px;
+  margin-left: 70px;
+  margin-top: 70px;
   margin-bottom: auto;
 }
 
@@ -111,7 +113,25 @@ a:visited {
   display: inline-block;
   margin-left: 130px;
 }
+/*JavaScript Elements under*/
+.button-style {
+  color: white;
+  background-color: var(--font-s-color);
+  padding: 10px;
+  border: 1px;
+  border-style: solid;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.3s opacity;
+}
 
+.recipe-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-left: 26px;
+  margin-top: 50px;
+}
 
 @media all and (max-width: 500px){
   .page-profile {
