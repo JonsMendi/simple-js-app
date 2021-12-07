@@ -29,13 +29,13 @@ let recipeRepository = (function(){
     recipeListItem.appendChild(button);
     recipeUnorderedList.appendChild(recipeListItem);
     /*Under we are creating an Event Listener opening on click using the 'showDetails' function that we create to show/open the recipeList*/
-    button.addEventListener('click', function (recipe){
-      console.log(recipeRepository.showDetails(recipe));
+    button.addEventListener('click', function (){
+      showDetails(recipe);
     });
   }
   /*Under we create a 'showDetails' function to open our recipeList in the */
   function showDetails(recipe) {
-    console.log(recipeList);
+    console.log(recipe.name, recipe.type, recipe.difficulty);
   }
 
   function getAll () {
